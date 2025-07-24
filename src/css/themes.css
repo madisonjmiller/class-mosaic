@@ -1,0 +1,64 @@
+/* THEMES */
+.light-theme {
+  --gradient-bg: linear-gradient(to left, var(--white), var(--lightest-grey));
+  --main-background-color: var(--white);
+  --banner-color: var(--dark-grey);
+  --required-color: var(--red)
+}
+
+.blue-theme {
+  --gradient-bg: linear-gradient(to left, var(--light-blue), var(--middle-blue));
+  --main-background-color: var(--light-blue);
+  --banner-color: var(--medium-blue);
+  --required-color: var(--red)
+}
+
+.pink-theme {
+  --gradient-bg: linear-gradient(to left, var(--light-pink), var(--medium-pink));
+  --main-background-color: var(--light-pink);
+  --banner-color: var(--dark-pink);
+  --required-color: var(--red)
+}
+
+.green-theme {
+  --gradient-bg: linear-gradient(to left, var(--light-green), var(--medium-green));
+  --main-background-color: var(--light-green);
+  --banner-color: var(--dark-green);
+  --required-color: var(--red)
+}
+
+.dark-theme {
+  --gradient-bg: linear-gradient(to left, var(--dark-grey), var(--black));
+  --main-background-color: var(--black);
+  --banner-color: var(--light-grey);
+  --required-color: var(--white)
+}
+
+
+
+
+/* Theme dropdown options */
+.themes-dropdown option[value="dark-theme"] {
+  background-color: var(--black);
+  color: var(--light-grey);
+}
+
+.themes-dropdown option[value="light-theme"] {
+  background-color: var(--white);
+  color: var(--dark-grey);
+}
+
+.themes-dropdown option[value="blue-theme"] {
+  background-color: var(--light-blue);
+  color: var(--medium-blue);
+}
+
+.themes-dropdown option[value="pink-theme"] {
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
+}
+
+.themes-dropdown option[value="green-theme"] {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+}

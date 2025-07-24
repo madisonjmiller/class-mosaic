@@ -1,0 +1,176 @@
+/* Lower portion of the screen below banner */
+.new-class {
+  margin: 100px auto;
+}
+
+/* Add a new class button */
+.add-class-button {
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--button-blue), #4a90e2);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  position: fixed;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+}
+
+/* Add class button hover color */
+.add-class-button:hover {
+  background: linear-gradient(135deg, #4a90e2, var(--button-blue));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Input max semester credits */
+.max-credits {
+  color: var(--black);
+  font-weight: bold;
+  position: fixed;
+  top: 212px;
+  right: 25px;
+  width: 35px;
+}
+
+/* Max credits label */
+.max-credits-label {
+  color: var(--banner-color);
+  font-weight: bold;
+  position: fixed;
+  top: 175px;
+  right: 40px;
+  width: 100px;
+}
+
+.instructions {
+  color: var(--banner-color);
+  position: fixed;
+  top: 245px;
+  font-size: 12px;
+  right: 40px;
+  width: 100px;
+  text-align: center;
+}
+
+
+/* Required Field Message */
+.required {
+  position: fixed;
+  top: 125px;
+  right: 5px;
+  color: var(--required-color);
+  padding: 10px;
+  z-index: 1000;
+  font-size: 12px;
+}
+
+
+
+
+
+/* Styles for table container */
+.class-table-container {
+  margin: 20px auto;
+  text-align: center;
+  width: 95%;
+}
+
+/* Wraps the table and buttons below */
+.class-table-wrapper {
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Table to fill out class data */
+.class-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* table header and table data borders and text format */
+.class-table th, .class-table td {
+  border: 1px solid var(--light-grey);
+  padding: 8px;
+  text-align: left;
+}
+
+/* table header */
+.class-table th {
+  background-color: var(--banner-color);
+  color: var(--main-background-color);  
+}
+
+/* table data */
+.class-table td {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 16px;
+}
+
+/* Below each table */
+.table-actions {
+  text-align: right;
+  padding-right: 10%;
+}
+
+/* Delete table button */
+.table-actions .delete-table-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Delete table button hover color */
+.table-actions button:hover {
+  background-color: var(--dark-red);
+  transform: translateY(-1px);
+}
+
+
+
+/* Bottom area of main screen where save all classes button sits */
+.global-actions {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
+/* Save all classes button */
+.save-all-tables-button {
+  padding: 10px 20px;
+  width: 100px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--button-blue), #4a90e2);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+.save-all-tables-button:hover {
+  background: linear-gradient(135deg, #4a90e2, var(--banner-color));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.credits-display {
+  margin-bottom: 15px;
+}

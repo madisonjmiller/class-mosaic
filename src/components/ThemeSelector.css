@@ -1,0 +1,33 @@
+.theme-selector-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* Everything related to theme dropdown menu*/
+.themes-dropdown {
+  padding: 5px;
+  border-radius: 8px;
+  color: var(--dark-grey);
+}
+
+.themes-dropdown option {
+  padding: 5px;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+/* "Themes:" that's bold*/
+.themes-dropdown-label {
+  position: absolute;
+  top: 30px;
+  right: 115px;
+  padding: 5px;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black;
+}
+

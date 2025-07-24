@@ -1,0 +1,187 @@
+/* Main page */
+body {
+  background: var(--gradient-bg);
+  color: var(--banner-color);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  margin: 0;
+}
+
+/* Banner/Top portion of screen that is a different color*/ 
+.banner {
+  width: 100%;
+  background: var(--banner-color);
+  padding: 10px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  height: 14.5%;
+}
+
+/* ClassMosaic Title */
+h1 {
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 48px;
+  margin: 0;
+  color: var(--white);
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black;
+}
+
+/*Piece together your best class schedule*/
+.banner p {
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  color: var(--white);
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black;
+}
+
+
+/* Everything related to theme dropdown menu*/
+.themes-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  padding: 5px;
+  border-radius: 8px;
+  color: var(--dark-grey);
+}
+
+.themes-dropdown option {
+  padding: 5px;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+/* "Themes:" that's bold*/
+.themes-dropdown-label {
+  position: absolute;
+  top: 30px;
+  right: 160px;
+  padding: 5px;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black;
+}
+
+
+.schedule-dropdown {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  color: var(--black);
+  border-color: var(--main-background-color);
+}
+
+.schedule-dropdown-label {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black;
+}
+
+/*Button in banner to generate schedule */
+#generate-schedule-button {
+    padding: 5px 20px;
+    font-size:medium;
+    background-color: var(--main-background-color);
+    color: var(--banner-color);
+    border-color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+    left: 150px;
+    top: 90px;
+    font-weight: bold;
+}
+#generate-schedule-button:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+/* Container for the schedule */
+.algorithm-schedule-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+/* Table styling */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 2px solid var(--banner-color);
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+.schedule-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--banner-color);
+    color: var(--main-background-color);
+}
+
+
+/* Styling for class cells */
+.class-item {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid var(--banner-color);
+    border-radius: 3px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* H2 styling */
+.algorithm-schedule-container h2 {
+    text-align: center;
+    color: var(--black);
+    text-shadow: 
+    -1px -1px 0 white,  /* Top-left shadow */
+    1px -1px 0 white,   /* Top-right shadow */
+    -1px 1px 0 white,   /* Bottom-left shadow */
+    1px 1px 0 white;
+}
+
+.credits-display {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--banner-color);
+}
