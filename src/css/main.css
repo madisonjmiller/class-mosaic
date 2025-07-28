@@ -121,6 +121,11 @@
   padding-right: 10%;
 }
 
+/* Class table input color*/
+.custom-input::placeholder {
+  color: #d3d3d3; /* Light grey color */
+}
+
 /* Delete table button */
 .table-actions .delete-table-button {
   padding: 5px 15px;
