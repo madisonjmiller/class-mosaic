@@ -69,43 +69,55 @@ h1 {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .info-modal-content {
     background-color: var(--main-background-color);
     color: var(--banner-color);
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: auto;
     padding: 20px;
     border: 1px solid var(--dark-grey);
     border-radius: 8px;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 65%;
+    max-width: 800px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 52px;
   font-family:'Courier New', Courier, monospace;
-  margin: 5px;
+  margin: 20px 0;
+  color: var(--banner-color);
 }
 
 .info-description {
   text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 li {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: var(--banner-color);
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Add some padding to the list items */
+ul {
+    padding-left: 20px;
 }
 
 .info-close-button {
-    color: var(--dark-grey);
+    color: var(--red);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -113,7 +125,7 @@ li {
 
 .info-close-button:hover,
 .info-close-button:focus {
-    color: var(--red);
+    color: var(--dark-red);
     text-decoration: none;
     cursor: pointer;
 }
