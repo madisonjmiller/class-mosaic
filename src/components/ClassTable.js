@@ -93,6 +93,7 @@ const ClassTable = ({ id, onDelete, setCollectTableData, initialData }) => {
             <td>
               <input 
                 type="text"
+		class="custom-input"
                 placeholder="Enter class name"
                 value={className}
                 onChange={(e) => setClassName(e.target.value)}
@@ -166,6 +167,7 @@ const ClassTable = ({ id, onDelete, setCollectTableData, initialData }) => {
             <td>
               <input
                 type="text"
+		class="custom-input"
                 placeholder="Enter instructor"
                 value={instructor}
                 onChange={(e) => setInstructor(e.target.value)}
@@ -174,7 +176,8 @@ const ClassTable = ({ id, onDelete, setCollectTableData, initialData }) => {
             <td>
               <input
                 type="number"
-                placeholder="1"
+		class="custom-input"
+                placeholder="0"
                 value={difficultyRating}
                 onChange={(e) => setDifficultyRating(e.target.value)}
                 min="1"
@@ -184,7 +187,8 @@ const ClassTable = ({ id, onDelete, setCollectTableData, initialData }) => {
             <td>
               <input
                 type="number"
-                placeholder="3"
+		class="custom-input"
+                placeholder="0"
                 value={credits}
                 onChange={(e) => setCredits(e.target.value)}
                 min="1"
