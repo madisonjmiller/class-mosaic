@@ -21,7 +21,7 @@ const InfoModal = () => {
               &times;
             </span>
             <h2>Scheduling Possibilities</h2>
-            <p className="info-description">Look at all possible class schedules with ClassMosaic!</p>
+            <div className="info-description">Look at all possible class schedules with ClassMosaic!</div>
             <ul>
               <li>
                 <strong>Stacked:</strong> Scheduling as many classes as possible on the same day to free up other days.
